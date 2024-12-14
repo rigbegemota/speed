@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complex HTML Example</title>
+    <style> /* Общие стили */ body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f9f9f9; } table { width: 80%; margin: 20px auto; border-collapse: collapse; } caption { font-size: 18px; font-weight: bold; margin-bottom: 10px; } th, td { border: 1px solid #ddd; padding: 8px; } thead th { background-color: #eaeaea; } tbody tr:nth-child(even) { background-color: #f2f2f2; } form { width: 40%; margin: 20px auto; padding: 20px; background-color: #fff; border: 1px solid #ccc; border-radius: 5px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); } fieldset { border: none; padding: 0; } legend { font-size: 20px; font-weight: bold; margin-bottom: 10px; } label { display: block; margin-bottom: 5px; } input[type="text"], input[type="email"], input[type="password"] { width: 100%; padding: 8px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 4px; } select { width: 100%; padding: 8px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 4px; } button { padding: 10px 20px; background-color: #007bff; color: white; border: none; border-radius: 4px; cursor: pointer; transition: background-color 0.3s ease; } button:hover { background-color: #0056b3; } ol { list-style-type: decimal; margin-left: 20px; } ul { list-style-type: disc; margin-left: 20px; } details summary { font-weight: bold; cursor: pointer; } iframe { display: block; margin: 20px auto; border: none; } footer { background-color: lightgray; padding: 10px; text-align: center; position: fixed; bottom: 0; left: 0; right: 0; } </style>
+</head>
+<body>
+    <table>
+        <caption>Таблица с данными</caption>
+        <thead>
+            <tr>
+                <th>Имя</th>
+                <th>Возраст</th>
+                <th>Город</th>
+                <th>Пол</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Иван</td>
+                <td>25</td>
+                <td>Москва</td>
+                <td>Мужской</td>
+            </tr>
+            <tr>
+                <td>Мария</td>
+                <td>32</td>
+                <td>Санкт-Петербург</td>
+                <td>Женский</td>
+            </tr>
+            <tr>
+                <td>Сергей</td>
+                <td>28</td>
+                <td>Новосибирск</td>
+                <td>Мужской</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <form action="/submit" method="post">
+        <fieldset>
+            <legend>Форма регистрации</legend>
+            <label for="name">Имя:</label>
+            <input type="text" id="name" name="name" required>
+            <br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br><br>
+            <label for="password">Пароль:</label>
+            <input type="password" id="password" name="password" required>
+            <br><br>
+            <label for="gender">Пол:</label>
+            <select id="gender" name="gender">
+                <option value="male">Мужской</option>
+                <option value="female">Женский</option>
+            </select>
+            <br><br>
+            <label for="terms">Я согласен с условиями использования:</label>
+            <input type="checkbox" id="terms" name="terms" required>
+            <br><br>
+            <button type="submit">Отправить</button>
+        </fieldset>
+    </form>
+
+    <ol start="5">
+        <li>Первый элемент списка</li>
+        <li>Второй элемент списка
+            <ul>
+                <li>Подэлемент списка</li>
+                <li>Еще один подэлемент списка</li>
+            </ul>
+        </li>
+        <li>Третий элемент списка</li>
+    </ol>
+
+    <details open>
+        <summary>Подробности</summary>
+        <p>Это пример сложного HTML-кода, включающего в себя таблицы, формы, списки и другие элементы.</p>
+    </details>
+
+    <iframe src="https://example.com" title="Example Website" width="500" height="300"></iframe>
+
+    <footer>© 2023 Все права защищены.</footer>
+</body>
+</html>
